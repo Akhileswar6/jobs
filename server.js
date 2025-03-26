@@ -11,9 +11,9 @@ app.use(express.json());
 
 // ✅ Maintain a persistent MySQL connection
 const db = mysql.createConnection({
-  host: "localhost",
+  host: "your-mysql-service-name.onrender.com",
   user: "root",
-  password: "", // 🔹 Add your MySQL password if required
+  password: "12345", // 🔹 Add your MySQL password if required
   database: "job_applications1"
 });
 
